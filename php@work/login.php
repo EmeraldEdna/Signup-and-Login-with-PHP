@@ -8,7 +8,8 @@ include("connection.php");
 if ($_SERVER['REQUEST_METHOD']=="POST") {
     # code...something was posted
     $user_name = $_POST['username'];
-    $password = $_POST['password'];{
+    $password = $_POST['password'];
+	$_SESSION['user_name']= $user_name;
 
 if(!empty($user_name)&& !empty($password)){
       //save to database
@@ -34,7 +35,7 @@ if($result){
 else {
     echo "Wrong username or password";
 }}
-}
+
 ?>
 
 

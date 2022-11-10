@@ -12,6 +12,10 @@ include("functions.php");
     $user_name = $_POST['username'];
     $password = $_POST['password'];
 
+   
+
+
+
 if(!empty($user_name)&& !empty($password)){
       //save to database
       $user_id = random_num(20);

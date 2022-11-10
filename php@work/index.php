@@ -1,6 +1,8 @@
 <?php
     session_start();
     $_SESSION;
+    //include("login.php");
+    
     ?>
 
 <!DOCTYPE html>
@@ -25,7 +27,7 @@
     <br />
     <h2 style="color: rgb(255, 255, 255);">
       Hello
-      <?php echo $user_data ['username'];?>Welcome to the Front Page
+      <?php echo $_SESSION ['user_name'];?>Welcome to the Front Page
     </h2>
   </body>
 </html>
